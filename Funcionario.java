@@ -1,25 +1,27 @@
-public class Funcionario {
-    private String primeiro_nome;
-    private String segundo_nome;
-    private double salario;
-   
-   
-    public Funcionario(String primeiro_nome, String segundo_nome, double salario) {
-        this.primeiro_nome = primeiro_nome;
-        this.segundo_nome = segundo_nome;
-        this.salario = salario;
+abstract public class Funcionario {
+    private String matricula;
+    private String nome;
+
+    public Funcionario(String matricula, String nome) {
+        this.matricula = matricula;
+        this.nome = nome;
+
     }
- 
-    public String getPrimeiro_nome() {
-        return primeiro_nome;
+
+    public String getMatricula() {
+        return matricula;
     }
- 
-    public String getSegundo_nome() {
-        return segundo_nome;
+
+    public String getNome() {
+        return nome;
     }
- 
-    public double getSalario() {
-        return salario;
+
+    public double ganhosF() {
+        return 1.212;
     }
-   
+
+    public String toString() {
+        return "Nome -->" + getNome() + " com a matricula --> " + getMatricula() +
+                " e com ganhos -->" + ganhosF();
+    }
 }
