@@ -6,6 +6,8 @@ public class FuncionarioHora extends FuncionarioAssalariado
     public FuncionarioHora(String matricula, String nome,
             double salarioSemanal, int horas, double valorDaHora) {
         super(matricula, nome, salarioSemanal);
+        this.horas = horas;
+        this.valorDaHora = valorDaHora;
     }
 
     public int getHoras() {
